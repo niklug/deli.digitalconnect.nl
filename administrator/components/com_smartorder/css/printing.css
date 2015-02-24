@@ -1,0 +1,21 @@
+/**
+ * @package    SmartOrder for Joomla 3.x
+ * @author     Organik Online Media Ltd.
+ * @copyright  Copyright (C) 2013- Organik Online Media Ltd. All rights reserved.
+ * @license    GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * @see        LICENSE.txt
+ */
+
+div#border-top{display: none;}
+div#header-box{display: none;}
+div#toolbar{display: none;}
+div#toolbar-box{display: none;}
+div.m{border: none}
+div#content-box{border: none;}
+div#border-bottom{display: none;}
+div#footer{display: none;}
+h1.printing{}
+p.prn-back{background-color: #ccc;margin:0;padding:4px}
+.header, .navbar, .subhead-collapse {
+    display: none;
+}

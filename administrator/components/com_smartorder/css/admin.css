@@ -1,0 +1,146 @@
+/**
+ * @package    SmartOrder for Joomla 3.x
+ * @author     Organik Online Media Ltd.
+ * @copyright  Copyright (C) 2013- Organik Online Media Ltd. All rights reserved.
+ * @license    GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * @see        LICENSE.txt
+ */
+
+#dashb_left{float: left;width:400px;border-right:1px dashed #ccc;margin-right:20px;}
+#dashb_right{float: left;width:510px}
+#dashb_right p.title{font-size:18px;font-weight: bold;color: #666 !important;margin:0;padding:2px 4px; text-transform: uppercase;}
+#dashb_right p.title a{float: right; text-transform: lowercase;font-size: 14px;display: inline-block;margin-top:4px}
+#dashb_right p.title img{float: left; }
+
+table.neworders {margin-top:10px !important; width:500px; margin-bottom: 5px;}
+table.neworders td{padding-right:10px !important}
+
+a.dashb_icon{
+    display: inline-block;
+    float: left; 
+    width: 110px; 
+    height: 105px; 
+    border:1px solid #ccc;
+    text-align: center;
+    padding:8px 5px 0 5px;
+    text-decoration: none;
+    color: #666 !important;
+    font-size:14px; 
+    background-color: #fff;
+    margin: 0 5px 10px 0}
+a.dashb_icon img {margin:0 auto 10px auto;display: block;}
+a.dashb_icon:hover{background-color: #F7F7F7; text-decoration: none;}
+
+.so-align-left {
+    text-align: left;
+}
+.so-align-right {
+    text-align: right;
+}
+.so-align-center {
+    text-align: center;
+}
+.so-align-top {
+    vertical-align: top;
+}
+.so-align-bottom {
+    vertical-align: bottom;
+}
+.so-align-middle {
+    vertical-align: middle;
+}
+
+.so-nowrap {
+    white-space: nowrap;
+}
+
+.so-filterlist {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.so-filterlist .text_area, .so-filterlist .inputbox {
+    margin: 0;
+}
+
+.so-adminlist {
+    width: 100%;
+    text-align: left;
+}
+
+.so-adminlist thead tr {
+    background: #eee;
+}
+
+.so-adminlist tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.so-adminlist td, .so-adminlist th {
+    padding: 2px 4px;
+}
+
+.so-adminlist .text_area {
+    width: 30px;
+}
+
+.so-adminlist td.order span {
+    display: block;
+    float: left;
+    margin-right: 2px;
+    width: 24px;
+}
+
+.so-adminlist .saveorder i:before {
+    content: "G";
+}
+
+.so-adminlist .saveorder {
+    float: none;
+}
+
+.so-admintable td {
+    padding: 2px 10px 2px 0px;
+}
+
+.so-admintable label {
+    display: inline;
+}
+
+.so-admintable .radio input, .so-admintable .checkbox input {
+    position: relative;
+    top: -4px;
+    float: none !important;
+    margin-right: 4px;
+}
+
+#open_Mon_from_H,
+#open_Mon_from_M,
+#open_Mon_to_H,
+#open_Mon_to_M,
+#open_Tue_from_H,
+#open_Tue_from_M,
+#open_Tue_to_H,
+#open_Tue_to_M,
+#open_Wed_from_H,
+#open_Wed_from_M,
+#open_Wed_to_H,
+#open_Wed_to_M,
+#open_Thu_from_H,
+#open_Thu_from_M,
+#open_Thu_to_H,
+#open_Thu_to_M,
+#open_Fri_from_H,
+#open_Fri_from_M,
+#open_Fri_to_H,
+#open_Fri_to_M,
+#open_Sat_from_H,
+#open_Sat_from_M,
+#open_Sat_to_H,
+#open_Sat_to_M,
+#open_Sun_from_H,
+#open_Sun_from_M,
+#open_Sun_to_H,
+#open_Sun_to_M {
+    width: 60px;
+}

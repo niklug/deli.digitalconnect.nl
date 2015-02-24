@@ -1,0 +1,988 @@
+/**
+ * @package    SmartOrder for Joomla 3.x
+ * @author     Organik Online Media Ltd.
+ * @copyright  Copyright (C) 2013- Organik Online Media Ltd. All rights reserved.
+ * @license    GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * @see        LICENSE.txt
+ */
+
+.container{
+overflow:hidden;
+margin: 0 auto;
+/* Szimulált szélesség */
+/*width:800px;*/
+/*width:100%;*/
+/*padding:0 65px;;*/
+}
+
+.container a,.container a:hover  {
+background-color:none !important;
+}
+
+
+.so-block {
+padding:0 5px;
+min-width:660px;
+margin-bottom:48px;
+
+}
+
+
+.so-all-rounded{
+-moz-border-radius: 12px; /* Firefox */
+-webkit-border-radius: 12px; /* Safari, Chrome */
+border-radius: 12px; /* CSS3 */	
+}
+
+.so-top-rounded{
+-webkit-border-top-left-radius: 12px;
+-webkit-border-top-right-radius: 12px;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+-moz-border-radius-topleft: 12px;
+-moz-border-radius-topright: 12px;
+}
+
+.so-bottom-rounded{
+-webkit-border-bottom-left-radius: 12px;
+-webkit-border-bottom-right-radius: 12px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+-moz-border-radius-bottomleft: 12px;
+-moz-border-radius-bottomright: 12px;
+}
+
+
+
+.so-block-belso {
+	width:100%;
+	margin:0 5px;
+	overflow:hidden;
+	margin:24px 0;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px !important;
+	color: #000;
+	line-height:1.5em !important;
+
+	
+	background-color:#b2c0ca;
+	border:1px solid #fff;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px #888;
+	box-shadow: 0 0 5px #888;
+}
+
+
+.so-cartblock{
+
+}
+
+
+.so-cartblock-head{
+background-color:#407196;
+color:#fff;
+text-transform:uppercase;
+font-size:15px;
+overflow:hidden;
+}
+
+
+.so-cartblock-head-inner{
+/*background-color:#333;*/
+width:60%;
+overflow:hidden;
+
+}
+
+.so-cartblock-head-item{
+float:left;
+background:url(../images/so-sprite.png) 22px -186px  no-repeat;
+padding:9px 0 9px 24px;
+}
+
+.so-cartblock-head-item#so-volumehead{
+float:right;
+width:136px;
+}
+
+
+
+.so-cartblock-head-item span{
+padding-left:22px;
+}
+
+
+.so-cartblock-body{
+padding:16px 22px 0 22px;
+overflow:hidden;
+}
+
+.so-cartblock-items{
+width:60%;
+float:left;
+}
+
+.so-cartblock-items-inner{
+padding-right:18px;
+/*border-right:1px solid #ced7dd;*/
+}
+
+.so-cartblock-desc{
+width:40%;
+float:left;
+/*position:relative;*/
+/*overflow:hidden;*/
+
+
+}
+
+.so-cartblock-desc-belso{
+display:block;
+padding-left:22px;
+border-left:2px solid #ced7dd;
+border-left:2px solid #becad2;
+margin-bottom:16px;
+overflow:hidden;
+position:relative;
+/* A magasság JQbol allitando*/
+/*height:116px;*/
+
+}
+
+
+.so-cartblock-desc-belso span{
+/*display:block;
+position: absolute;*/
+/*width:100%;*/
+}
+
+span#slide-1{
+/* JQbol animalando*/
+/*	left:50px*/
+}
+
+
+
+.so-oneitem{
+/*background-color:#aaa;*/
+overflow:hidden;
+margin-bottom:16px;
+}
+
+
+input.so-pcs{
+display:block;
+width:35px;
+
+height:26px !important;
+line-height:26px !important;
+float:left;
+border:none;
+margin-right:2px;
+margin-right:6px;
+border:1px solid #929da4;
+padding-left:5px;
+}
+
+a.so-itembutton{
+display:block;
+width:20px;
+height:21px;
+margin:4px 2px 0 2px;
+background-image:url(../images/so-sprite.png) !important;
+background-position:0 -100px;
+float:left;
+background-color:transparent !important;
+}
+
+a.so-up{background-position:0 -50px!important;}
+a.so-down{background-position:0 -100px!important;}
+a.so-delete{background-position:0 -150px!important;}
+
+a.so-up:hover{background-position:-200px -50px !important;}
+a.so-down:hover{background-position:-200px -100px!important;}
+a.so-delete:hover{background-position:-200px -150px!important;}
+
+a.so-delete-disabled, a.so-delete-disabled:hover{background-position:-400px -150px !important;cursor:default !important;}
+a.so-up-disabled, a.so-up-disabled:hover{background-position:-400px -50px !important;cursor:default !important;}
+a.so-down-disabled, a.so-down-disabled:hover{background-position:-400px -100px !important;cursor:default !important;}
+
+
+a.so-up-topping, a.so-up-topping:hover{background-position:-400px -50px!important;cursor:default;}
+a.so-down-topping, a.so-down-topping:hover{background-position:-400px -100px!important;cursor:default;}
+
+.so-oneitem-controlblock{
+float:right;
+}
+
+
+.so-item-placeholder{
+margin-bottom:16px;
+padding:9px 0;
+}
+
+.so-item-placeholder span{
+display:block;
+width:100%;
+height:10px;
+background-color:#bdc9d2;
+
+}
+
+
+
+
+
+/* SmartOrder Totalblock -------------------*/
+
+
+.so-totalblock{
+    overflow: hidden;
+    padding: 14px 20px;
+	background-color:#407196;
+}
+
+
+.so-total{
+    background: url("../images/so-sprite.png") no-repeat scroll 0px -237px transparent;
+    float: left;
+    padding: 9px 0 9px 0px;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:15px;
+	width:60%;
+}
+
+.so-total > span{
+padding-left:22px;
+}
+
+span.so-price{
+font-weight:bold;
+}
+
+
+.so-notification{
+float:right;
+background-color:#a0b8cb;
+/*width:350px;*/
+font-size:15px;
+line-height:15px;
+
+-moz-border-radius: 18px; /* Firefox */
+-webkit-border-radius: 18px; /* Safari, Chrome */
+border-radius: 18px; /* CSS3 */	
+}
+
+
+.so-notification-sign{
+float:left;
+width:28px;
+height:28px;
+background-color: #ffffff;
+font-size:28px;
+line-height:28px;
+color:#b20000;
+
+margin:5px;
+
+-moz-border-radius: 14px; /* Firefox */
+-webkit-border-radius: 14px; /* Safari, Chrome */
+border-radius: 14px; /* CSS3 */	
+}
+
+.so-notification-sign span{
+padding-left:10px;
+}
+
+
+.so-notification-text{
+display:block;
+line-height:15px;
+font-size:15px;
+padding:11px 18px 11px 46px;
+}
+
+.so-notification-text span{
+display:block;
+white-space: nowrap; 
+}
+
+
+
+
+
+
+
+/* SamrtOrder Contact Block ----------------------------*/
+
+
+.so-contactblock{
+width:100%;
+overflow:hidden;
+}
+
+
+.so-contactblock-inner{
+padding:16px 22px 7px 22px;
+overflow:hidden;
+/*PRELOAD Csak hogy betöltődjön az image az ok fázishoz*/
+background:url("../images/ok.png") no-repeat 2000px 2000px;
+
+}
+
+.so-contactblock-fieldblock{
+width:50%;
+float:left;
+}
+
+
+.so-contactblock-fieldblock form{
+
+}
+
+.so-onecontactrow{
+width:100%;
+height:28px;
+margin-bottom:9px;
+}
+
+.so-contactblock-fieldblock label{
+display:block;
+width:20%;
+float:left;
+font-size:15px;
+line-height:28px;
+}
+
+
+.so-contactblock-fieldblock input, .so-contactblock-fieldblock select{
+width:76%;
+height:26px;
+line-height:26px;
+border:1px solid #929DA4;
+padding-left:6px;
+}
+
+.so-contactblock-fieldblock select {
+padding: 3px;
+height: auto;
+width: 78%;
+}
+
+
+.so-contactblock-noteblock{
+width:50%;
+float:left;
+}
+
+.so-contactblock-noteblock-wrapper{
+background-color:#FFF;
+    border: none;
+	width:98%;
+    height: 137px;
+    overflow: hidden;
+	float:right;
+	border:1px solid #929DA4;
+	}
+
+
+.so-contactblock-noteblock textarea{
+    border: none;
+	width:97%;
+    height: 127px;
+    overflow: auto;
+	margin:5px;
+	}
+
+
+
+	
+	
+/* Smarotrder - Bottomblock -------------------------*/	
+
+.so-bottomblock{
+background-color:#444;
+}
+
+
+.so-bottomblock-inner{
+padding:12px 22px;
+overflow:hidden;
+}
+
+
+a.so-ordernow{
+display:block;
+width:188px;
+height:44px;
+background: url("../images/so-sprite.png") no-repeat scroll 0px 0px transparent !important;
+float: left;
+text-decoration:none;
+overflow:hidden;
+}
+
+a.orderphase{
+/*background: url("../images/so-sprite.png") no-repeat scroll -30px 0px transparent;*/
+}
+
+
+
+a.so-ordernow span{
+display:block;
+	color:#fff;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size:15px;
+	margin:11px 0 0 28px;
+
+}
+
+
+a.so-ordernow:hover{
+background-position:-200px 0 !important;
+}
+
+
+a.so-agreeterms{
+	display: block;
+	float: left;
+	width: auto;
+	margin:10px 0 0 10px; color:#888 !important;
+}
+
+p#msgAjax{color:#FF5555;margin:-20px 0 10px 0 !important;text-align:center}
+
+
+
+
+
+
+/* SmartOrder Menu --------------------------------------------*/
+
+.so-menublock{
+padding:0 5px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:15px;
+color: #000;
+line-height:1.5em;
+
+}
+
+
+.so-menublock h2{
+display:block;
+width:100%;
+margin-bottom:24px;
+background-color:#e4e4e4;
+-moz-border-radius: 12px; /* Firefox */
+-webkit-border-radius: 12px; /* Safari, Chrome */
+border-radius: 18px; /* CSS3 */	
+clear:both;
+overflow:hidden;
+}
+
+span.so-menu-cat-name{
+display:block;
+padding:10px 16px;
+font-size:18px;
+color:#555;
+text-transform:uppercase;
+letter-spacing:1px;
+float:left;
+}
+
+span.so-menu-cat-up{
+display:block;
+padding:10px 16px;
+
+float:right;
+}
+
+
+.so-onemenuitem{
+margin-bottom:36px;
+overflow:hidden;
+}
+
+
+.so-onemenuitem-upper{
+/*width:100%;*/
+overflow:hidden;
+border-bottom:2px solid #ddd;
+}
+
+
+.so-onemenuitem h3{
+width:50%;
+width:47%;
+width:42%;
+display:block;
+float:left;
+font-size:18px;
+color:#407196;
+margin:0 !important;
+}
+
+
+.so-menuitemcontroller{
+float:right;
+}
+
+
+a.so-menubutton{
+    display: block;
+/*    background:url("../images/so-sprite.png") no-repeat scroll 124px -292px transparent;*/
+    float: left;
+    height: 26px;
+   overflow: hidden;
+    text-decoration: none;
+/*    width: 144px;*/
+	text-align:center;
+	margin:0 12px 4px 0;
+
+	-moz-border-radius: 13px; /* Firefox */
+	-webkit-border-radius: 13px; /* Safari, Chrome */
+	border-radius: 13px; /* CSS3 */	
+}
+
+
+
+
+
+a.so-addto{ background-color:#dc5d00 !important ;}
+a.so-addto:hover{background-color:#e37a2d!important ;}
+
+a.so-addnew{ background-color:#888!important ;}
+a.so-addnew:hover{background-color:#999!important ;}
+
+a.so-addtopping{ background-color:#4783ad!important ;}
+a.so-addtopping:hover{background-color:#4698d1!important ;}
+
+
+a.so-checkout{ background-color:#c16400!important ;}
+a.so-checkout:hover{background-color:#D58226!important ;}
+
+
+
+a.so-menubutton span{
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+	margin:2px 0px 0 0 ;
+	padding:0 20px;
+}
+
+a.so-menubutton, a.so-ordernow {
+    text-decoration: none !important;
+}
+
+
+
+
+span.so-menuitemprice{
+	display:block;
+	float:right;
+	width:80px;
+	width:60px;
+	text-align:right;
+}
+
+
+.so-menudesc{
+
+}
+
+
+
+
+
+
+
+
+
+/* SmartOrder Effektesztelés ------------------------------ */
+
+
+/* Klón prototipusok rejtése*/
+.so-clonewrapper-addtobasket, .so-clonewrapper-addnew, .so-clonewrapper-menutoppingblock, .so-clonewrapper-addtopping, .so-clonewrapper, .so-clonewrapper-topping, .so-clonewrapper-ok, .so-thank-text-reginfo-registeredNotlogged{
+display:none;
+}
+
+
+
+
+
+
+
+.so-onetopping-controlblock{
+float:right;
+}
+
+
+.so-onetopping{
+/*background-color:#aaa;*/
+overflow:hidden;
+margin-bottom:16px;
+}
+
+.so-toppingarrow{
+width:30px;
+height:28px;
+float:left;
+background:url("../images/so-sprite.png") no-repeat 10px -345px;
+
+}
+
+
+
+
+
+
+.so-contactblock-inner-ok{
+padding:25px 22px 25px 150px;
+color:#fff;
+background:#888 url("../images/ok.png") no-repeat  1% 50%;
+overflow:hidden;
+}
+
+.so-thank-head {
+font-size:24px;
+text-transform:uppercase;
+}
+
+.so-thank-text{
+font-size:15px;
+}
+
+.so-thank-text a{
+color:#D7FF84  !important;
+text-decoration:none;
+}
+
+.so-thank-text a:hover{
+text-decoration:underline;
+}
+
+
+
+
+
+/* MENU 1 in basket kontroller*/
+
+.so-clonewrapper-addmore{
+	display:none;
+}
+
+div.so-addmorebutton{
+    display: block;
+    float: left;
+    height: 26px;
+	overflow: hidden;
+    text-decoration: none;
+	text-align:center;
+	margin:0 12px 4px 0;
+	background-color:#cfddae;
+	border:1px solid #739c12;
+
+	-moz-border-radius: 13px; /* Firefox */
+	-webkit-border-radius: 13px; /* Safari, Chrome */
+	border-radius: 13px; /* CSS3 */	
+}
+
+a.so-menu-up{background-position:0 -50px !important;}
+a.so-menu-down{background-position:0 -100px!important;}
+a.so-menu-delete{background-position:0 -150px!important;}
+
+a.so-menu-up:hover{background-position:-200px -50px!important;}
+a.so-menu-down:hover{background-position:-200px -100px!important;}
+a.so-menu-delete:hover{background-position:-200px -150px!important;}
+
+
+div.so-addmorebutton-inner{
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+	margin:2px 0px 0 0 ;
+	padding:0 0px 0 20px;
+	overflow:hidden;
+
+}
+
+
+.so-addmorebutton-controlblock{
+float:left;
+}
+
+
+
+.so-addmore-text{
+float:left;
+color:#000;
+font-size: 15px;
+text-decoration: none;
+margin:2px 0px 0 0 ;
+margin:0px 0px 0 0 ;
+padding:0 16px 0 0;
+overflow:hidden;
+
+}
+
+
+a.so-addmore-itembutton{
+display:block;
+width:20px;
+height:21px;
+margin:1px 2px 0 2px;
+background-image:url(../images/so-sprite.png) !important;
+background-color:transparent !important;
+background-position:0 -100px;
+float:left;
+}
+
+span.menupcs{
+}
+
+
+
+
+
+
+
+/* MENU TOPPING ----------------*/
+/* MENU TOPPING ----------------*/
+/* MENU TOPPING ----------------*/
+
+.so-menutopping-block{
+background-color:#f2f2f2;
+background-color:#e4edf4;
+border-top:1px solid #ccc;
+border-bottom:1px solid #ccc;
+padding:6px 0;
+margin-bottom:3px;
+overflow:hidden;
+}
+
+.so-menutopping-block-left, .so-menutopping-block-right {
+float:left;
+width:50%;
+}
+
+.so-menutopping-onetopping {
+/*background-color:#FFF;*/
+margin: 10px 16px;
+overflow:hidden;
+}
+
+
+
+.so-menutopping-onetopping input{
+/*margin:0 3px 0 12px;*/
+float:left;
+width:16px !important;
+height:16px !important;
+}
+
+.toppingprice{
+display:block;
+/*width:60px;*/
+float:left;
+line-height:16px;
+padding-left:8px;
+}
+
+
+.toppingname{
+display:block;
+float:left;
+line-height:17px;
+}
+
+
+
+/*DEfault selectek elválasztása */
+
+.so-itemselect{
+width:65%;
+height:28px;
+font-size:15px;
+padding:4px;
+padding:3px;
+float:left;
+
+border:1px solid #929da4;
+border:1px solid #b2c0ca;
+border:1px solid #D8EAF7;
+
+background-color:#CCDEE6;
+background-color:#b2c0ca;
+background-color:#CED6DC;
+
+color:#000;
+font-weight:bold;
+}
+
+.default > .so-itemselect{
+background-color:#fff;
+color:#000;
+font-weight:normal;
+}
+
+.so-toppingselect{
+/*width:65%;*/
+width:69%;
+/*width:310px;*/
+height:28px;
+font-size:15px;
+padding:4px;
+/*float:left;*/
+float:right;
+border:1px solid #929da4;
+margin-right:6px;
+
+color:#439bdd;
+color:#555;
+color:#333;
+color:#0076B5;
+
+background-color:#CCDEE6;
+background-color:#b2c0ca;
+background-color:#CED6DC;
+
+font-weight:bold;
+
+}
+
+
+.default > .so-toppingselect{
+background-color:#fff;
+/*color:#000;*/
+font-weight:normal;
+}
+
+
+
+.so-toppingselect option{
+/*height:28px;*/
+padding:4px;
+width: 800px !important;
+}
+
+
+
+.so-itemselect option{
+/*height:28px;*/
+padding:4px;
+}
+
+.checkedbold{
+font-weight:bold!important;
+}
+
+.menuitemhighlight{
+color:green !important;
+}
+
+
+
+/*Alert*/
+
+.so-alertwrapper {
+display:none;
+}
+
+.so-alert {
+    background-color: #FBE6E6;
+    border-color: #D60000;
+    border-style: solid;
+    border-width: 2px 0;
+    color: black !important;
+    display: block;
+	width:100%;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 20px;
+    text-decoration: none !important;
+	clear:both;
+	overflow:hidden;
+	margin-bottom:36px;
+}
+
+.felkialto{
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    color: #B20000;
+    display: block;
+    float: left;
+    font-size: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 7px 0 0 8px;
+    text-align: center;
+    width: 40px;
+}
+
+.alerttext{
+    display: block;
+    float: left;
+    padding: 20px 12px 20px 10px;
+	font-size:17px;
+}
+
+.clr {
+clear:both;
+}
+
+table.smartlogin {background: #efefef;}
+table.smartlogin td{padding:8px 16px; color: #444444}
+table.smartlogin td.label {width: 100px;}
+table.smartlogin .inputbox{padding:6px !important; color: #444444; width: 300px; background: #fff !important; border: 1px solid #ccc !important;}
+table.smartlogin .kiem{border:1px solid #BA34C3 !important; }
+table.smartlogin .error {border:1px solid red !important;}
+table.smartlogin .G{padding:4px 20px; color: #444444; }
+div.msg-error{margin:0 0 10px 0; padding:5px;border-top:2px solid red;border-bottom:2px solid red; background:#F6E5E5; font-weight: bold;}
+
+
+
+
+
+
+
+/* Smartorder 1.1 - Product image handling - Frontend*/
+
+	.thumb_cont{
+		float:left;
+		margin-right:10px;
+		background-color:#444;
+		border-radius:2px;
+		overflow:hidden;
+	}
+	
+	.thumb_cont img.thumb{
+		width:60px;
+		height:60px;
+		border:1px solid #ccc;
+		margin:4px;
+	}
+
+.thumb_cont a {
+display:block;
+overflow:hidden;
+text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

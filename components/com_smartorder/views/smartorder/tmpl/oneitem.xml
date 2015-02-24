@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Package:   SmartOrder for Joomla 3.x
+Author:    Organik Online Media Ltd.
+Copyright: Copyright (C) 2013- Organik Online Media Ltd. All rights reserved.
+License:   GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+See:       LICENSE.txt
+Note:      All ini files need to be saved as UTF-8 - No BOM
+-->
+<metadata>
+	<layout title="menuitem" hidden="true">
+		<message>
+			<![CDATA[menuitem]]>
+		</message>
+	</layout>
+</metadata>
